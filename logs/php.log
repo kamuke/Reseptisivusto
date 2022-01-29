@@ -1,0 +1,231 @@
+
+[2022-01-29 21:21:33 EEST] SELECT  recipe.ID,
+                            recipe.type,
+                            recipe.name,
+                            recipe.description,
+                            recipe.img,
+                            recipe.cookingtime,
+                            recipe.servings,
+                            recipe.difficulty,
+                            recipe.published,
+                            IFNULL(AVG(recipeRating.rating),0) AS ratingValue
+                    FROM recipe
+                    LEFT JOIN recipeRating ON recipe.ID = recipeRating.recipeID
+                    LEFT JOIN recipeKeyword ON recipe.ID = recipeKeyword.recipeID
+                    LEFT JOIN keyword ON keyword.ID = recipeKeyword.keywordID
+                    LEFT JOIN recipeCategory ON recipe.ID = recipeCategory.recipeID
+    				LEFT JOIN category ON category.ID = recipeCategory.categoryID
+                    LEFT JOIN recipeDiet ON recipe.ID = recipeDiet.recipeID
+    				LEFT JOIN diet ON diet.ID = recipeDiet.dietID
+                    WHERE recipe.ispublished = 1
+                    GROUP BY recipe.ID ORDER BY published DESC LIMIT :limit 
+
+[2022-01-29 21:21:35 EEST] SELECT  recipe.ID,
+                            recipe.type,
+                            recipe.name,
+                            recipe.description,
+                            recipe.img,
+                            recipe.cookingtime,
+                            recipe.servings,
+                            recipe.difficulty,
+                            recipe.published,
+                            IFNULL(AVG(recipeRating.rating),0) AS ratingValue
+                    FROM recipe
+                    LEFT JOIN recipeRating ON recipe.ID = recipeRating.recipeID
+                    LEFT JOIN recipeKeyword ON recipe.ID = recipeKeyword.recipeID
+                    LEFT JOIN keyword ON keyword.ID = recipeKeyword.keywordID
+                    LEFT JOIN recipeCategory ON recipe.ID = recipeCategory.recipeID
+    				LEFT JOIN category ON category.ID = recipeCategory.categoryID
+                    LEFT JOIN recipeDiet ON recipe.ID = recipeDiet.recipeID
+    				LEFT JOIN diet ON diet.ID = recipeDiet.dietID
+                    WHERE recipe.ispublished = 1
+                    GROUP BY recipe.ID ORDER BY published DESC LIMIT :limit 
+
+[2022-01-29 21:21:36 EEST] SELECT  recipe.ID,
+                            recipe.type,
+                            recipe.name,
+                            recipe.description,
+                            recipe.img,
+                            recipe.cookingtime,
+                            recipe.servings,
+                            recipe.difficulty,
+                            recipe.published,
+                            IFNULL(AVG(recipeRating.rating),0) AS ratingValue
+                    FROM recipe
+                    LEFT JOIN recipeRating ON recipe.ID = recipeRating.recipeID
+                    LEFT JOIN recipeKeyword ON recipe.ID = recipeKeyword.recipeID
+                    LEFT JOIN keyword ON keyword.ID = recipeKeyword.keywordID
+                    LEFT JOIN recipeCategory ON recipe.ID = recipeCategory.recipeID
+    				LEFT JOIN category ON category.ID = recipeCategory.categoryID
+                    LEFT JOIN recipeDiet ON recipe.ID = recipeDiet.recipeID
+    				LEFT JOIN diet ON diet.ID = recipeDiet.dietID
+                    WHERE recipe.ispublished = 1
+                    GROUP BY recipe.ID ORDER BY published DESC LIMIT :limit 
+
+[2022-01-29 21:22:27 EEST] SELECT  recipe.ID,
+                            recipe.type,
+                            recipe.name,
+                            recipe.description,
+                            recipe.img,
+                            recipe.cookingtime,
+                            recipe.servings,
+                            recipe.difficulty,
+                            recipe.published,
+                            IFNULL(AVG(recipeRating.rating),0) AS ratingValue
+                    FROM recipe
+                    LEFT JOIN recipeRating ON recipe.ID = recipeRating.recipeID
+                    LEFT JOIN recipeKeyword ON recipe.ID = recipeKeyword.recipeID
+                    LEFT JOIN keyword ON keyword.ID = recipeKeyword.keywordID
+                    LEFT JOIN recipeCategory ON recipe.ID = recipeCategory.recipeID
+    				LEFT JOIN category ON category.ID = recipeCategory.categoryID
+                    LEFT JOIN recipeDiet ON recipe.ID = recipeDiet.recipeID
+    				LEFT JOIN diet ON diet.ID = recipeDiet.dietID
+                    WHERE recipe.ispublished = 1
+                    GROUP BY recipe.ID ORDER BY published DESC LIMIT :limit 
+
+[2022-01-29 21:22:29 EEST] SELECT  recipe.ID,
+                            recipe.type,
+                            recipe.name,
+                            recipe.description,
+                            recipe.img,
+                            recipe.cookingtime,
+                            recipe.servings,
+                            recipe.difficulty,
+                            recipe.published,
+                            IFNULL(AVG(recipeRating.rating),0) AS ratingValue
+                    FROM recipe
+                    LEFT JOIN recipeRating ON recipe.ID = recipeRating.recipeID
+                    LEFT JOIN recipeKeyword ON recipe.ID = recipeKeyword.recipeID
+                    LEFT JOIN keyword ON keyword.ID = recipeKeyword.keywordID
+                    LEFT JOIN recipeCategory ON recipe.ID = recipeCategory.recipeID
+    				LEFT JOIN category ON category.ID = recipeCategory.categoryID
+                    LEFT JOIN recipeDiet ON recipe.ID = recipeDiet.recipeID
+    				LEFT JOIN diet ON diet.ID = recipeDiet.dietID
+                    WHERE recipe.ispublished = 1
+                    GROUP BY recipe.ID ORDER BY published DESC LIMIT :limit 
+
+[2022-01-29 21:22:31 EEST] SELECT  recipe.ID,
+                            recipe.type,
+                            recipe.name,
+                            recipe.description,
+                            recipe.img,
+                            recipe.cookingtime,
+                            recipe.servings,
+                            recipe.difficulty,
+                            recipe.published,
+                            IFNULL(AVG(recipeRating.rating),0) AS ratingValue
+                    FROM recipe
+                    LEFT JOIN recipeRating ON recipe.ID = recipeRating.recipeID
+                    LEFT JOIN recipeKeyword ON recipe.ID = recipeKeyword.recipeID
+                    LEFT JOIN keyword ON keyword.ID = recipeKeyword.keywordID
+                    LEFT JOIN recipeCategory ON recipe.ID = recipeCategory.recipeID
+    				LEFT JOIN category ON category.ID = recipeCategory.categoryID
+                    LEFT JOIN recipeDiet ON recipe.ID = recipeDiet.recipeID
+    				LEFT JOIN diet ON diet.ID = recipeDiet.dietID
+                    WHERE recipe.ispublished = 1
+                    GROUP BY recipe.ID ORDER BY published DESC LIMIT :limit 
+
+[2022-01-29 21:22:33 EEST] SELECT  recipe.ID,
+                            recipe.type,
+                            recipe.name,
+                            recipe.description,
+                            recipe.img,
+                            recipe.cookingtime,
+                            recipe.servings,
+                            recipe.difficulty,
+                            recipe.published,
+                            IFNULL(AVG(recipeRating.rating),0) AS ratingValue
+                    FROM recipe
+                    LEFT JOIN recipeRating ON recipe.ID = recipeRating.recipeID
+                    LEFT JOIN recipeKeyword ON recipe.ID = recipeKeyword.recipeID
+                    LEFT JOIN keyword ON keyword.ID = recipeKeyword.keywordID
+                    LEFT JOIN recipeCategory ON recipe.ID = recipeCategory.recipeID
+    				LEFT JOIN category ON category.ID = recipeCategory.categoryID
+                    LEFT JOIN recipeDiet ON recipe.ID = recipeDiet.recipeID
+    				LEFT JOIN diet ON diet.ID = recipeDiet.dietID
+                    WHERE recipe.ispublished = 1
+                    GROUP BY recipe.ID ORDER BY published DESC LIMIT :limit 
+
+[2022-01-29 21:24:29 EEST] SELECT  recipe.ID,
+                            recipe.type,
+                            recipe.name,
+                            recipe.description,
+                            recipe.img,
+                            recipe.cookingtime,
+                            recipe.servings,
+                            recipe.difficulty,
+                            recipe.published,
+                            IFNULL(AVG(recipeRating.rating),0) AS ratingValue
+                    FROM recipe
+                    LEFT JOIN recipeRating ON recipe.ID = recipeRating.recipeID
+                    LEFT JOIN recipeKeyword ON recipe.ID = recipeKeyword.recipeID
+                    LEFT JOIN keyword ON keyword.ID = recipeKeyword.keywordID
+                    LEFT JOIN recipeCategory ON recipe.ID = recipeCategory.recipeID
+    				LEFT JOIN category ON category.ID = recipeCategory.categoryID
+                    LEFT JOIN recipeDiet ON recipe.ID = recipeDiet.recipeID
+    				LEFT JOIN diet ON diet.ID = recipeDiet.dietID
+                    WHERE recipe.ispublished = 1
+                    GROUP BY recipe.ID ORDER BY published DESC LIMIT :limit 
+
+[2022-01-29 21:24:31 EEST] SELECT  recipe.ID,
+                            recipe.type,
+                            recipe.name,
+                            recipe.description,
+                            recipe.img,
+                            recipe.cookingtime,
+                            recipe.servings,
+                            recipe.difficulty,
+                            recipe.published,
+                            IFNULL(AVG(recipeRating.rating),0) AS ratingValue
+                    FROM recipe
+                    LEFT JOIN recipeRating ON recipe.ID = recipeRating.recipeID
+                    LEFT JOIN recipeKeyword ON recipe.ID = recipeKeyword.recipeID
+                    LEFT JOIN keyword ON keyword.ID = recipeKeyword.keywordID
+                    LEFT JOIN recipeCategory ON recipe.ID = recipeCategory.recipeID
+    				LEFT JOIN category ON category.ID = recipeCategory.categoryID
+                    LEFT JOIN recipeDiet ON recipe.ID = recipeDiet.recipeID
+    				LEFT JOIN diet ON diet.ID = recipeDiet.dietID
+                    WHERE recipe.ispublished = 1
+                    GROUP BY recipe.ID ORDER BY published DESC LIMIT :limit 
+
+[2022-01-29 21:24:33 EEST] SELECT  recipe.ID,
+                            recipe.type,
+                            recipe.name,
+                            recipe.description,
+                            recipe.img,
+                            recipe.cookingtime,
+                            recipe.servings,
+                            recipe.difficulty,
+                            recipe.published,
+                            IFNULL(AVG(recipeRating.rating),0) AS ratingValue
+                    FROM recipe
+                    LEFT JOIN recipeRating ON recipe.ID = recipeRating.recipeID
+                    LEFT JOIN recipeKeyword ON recipe.ID = recipeKeyword.recipeID
+                    LEFT JOIN keyword ON keyword.ID = recipeKeyword.keywordID
+                    LEFT JOIN recipeCategory ON recipe.ID = recipeCategory.recipeID
+    				LEFT JOIN category ON category.ID = recipeCategory.categoryID
+                    LEFT JOIN recipeDiet ON recipe.ID = recipeDiet.recipeID
+    				LEFT JOIN diet ON diet.ID = recipeDiet.dietID
+                    WHERE recipe.ispublished = 1
+                    GROUP BY recipe.ID ORDER BY published DESC LIMIT :limit 
+
+[2022-01-29 21:24:36 EEST] SELECT  recipe.ID,
+                            recipe.type,
+                            recipe.name,
+                            recipe.description,
+                            recipe.img,
+                            recipe.cookingtime,
+                            recipe.servings,
+                            recipe.difficulty,
+                            recipe.published,
+                            IFNULL(AVG(recipeRating.rating),0) AS ratingValue
+                    FROM recipe
+                    LEFT JOIN recipeRating ON recipe.ID = recipeRating.recipeID
+                    LEFT JOIN recipeKeyword ON recipe.ID = recipeKeyword.recipeID
+                    LEFT JOIN keyword ON keyword.ID = recipeKeyword.keywordID
+                    LEFT JOIN recipeCategory ON recipe.ID = recipeCategory.recipeID
+    				LEFT JOIN category ON category.ID = recipeCategory.categoryID
+                    LEFT JOIN recipeDiet ON recipe.ID = recipeDiet.recipeID
+    				LEFT JOIN diet ON diet.ID = recipeDiet.dietID
+                    WHERE recipe.ispublished = 1
+                    GROUP BY recipe.ID ORDER BY published DESC LIMIT :limit 

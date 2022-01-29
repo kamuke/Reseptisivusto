@@ -1,0 +1,986 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-family: 'Asap', sans-serif;
+  letter-spacing: 0.8px;
+  color: #303030;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body { background: #F9F9F9; }
+
+/* h1, h2, h3, h4, p styles starts */
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+  margin: 0;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 3.052rem;
+  letter-spacing: 1.2px;
+  line-height: 3.452rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+  line-height: 2.841rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+  line-height: 2.353rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.65rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.bold { font-weight: 500; }
+
+/* For devices with width of 767px and less, like  phones*/
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.953rem;
+    line-height: 2.353rem;
+  }
+
+  h2 {
+    font-size: 1.563rem;
+    line-height: 1.963rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.65rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* h1, h2, h3, h4, p styles ends */
+
+/* container, round-box, drop-shadow styles starts */
+.container {
+  max-width: 1212px;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.not-found {
+  min-height: 70vh;
+  padding-top: 5rem;
+}
+
+.round-box {
+  margin: 0;
+  border-radius: 24px;
+  background-color: #FFFFFF;
+}
+
+.drop-shadow {
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow:  0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow:  0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* For devices with width of 1279px and less, like landscape tablets and laptops */
+@media only screen and (max-width: 1279px) {
+  .container { padding: 0 2.5rem; }
+}
+
+/* For devices with width of 1023px and less, like portrait tablets*/
+@media only screen and (max-width: 1023px) {
+  .round-box { border-radius: 16px; }
+}
+
+/* For devices with width of 767px and less, like phones*/
+@media only screen and (max-width: 767px) {
+  .container { padding: 0 1rem; }
+}
+
+/* container, round-box, drop-shadow styles ends */
+
+/* header styles starts */
+
+.header-container {
+  position: fixed;
+  top: 0;
+  z-index: 6;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 60px;
+  padding-top: 1rem;
+
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow:  0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow:  0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #FA5E42;
+}
+
+.header-container a { color: #FA5E42; }
+
+/* For devices with width of 767px and less, like larger phones*/
+@media only screen and (max-width: 767px) {
+  .header-container {
+    height: 50px;
+    padding-top: 9px;
+  }
+}
+
+/* header styles ends */
+
+/* input[type="search"] & input[type="email"] & drop down search styles starts */
+
+.input-container, .drop-down-search-form, .email-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search-container .input-container {
+  margin-bottom: 1rem;
+}
+
+.email-form { margin-bottom: 0.5rem; }
+
+.error { animation: shake 0.2s ease-in-out 0s 2; }
+
+@keyframes shake {
+  0% {margin-left: 0;}
+  25% {margin-left: 0.2rem;}
+  75% {margin-left: -0.2rem;}
+  100% {margin-left: 0;}
+}
+
+input[type="search"], input[type="email"] {
+  padding-left: 56px;
+  padding-right: 24px;
+  border-radius: 24px;
+  min-width: 150px;
+  height: 50px;
+  display: inline-block;
+  border: none;
+  margin-right: 1rem;
+  font-size: 1rem;
+  flex: 1 0 100px;
+}
+
+input[type="search"]:focus, input[type="email"]:focus {
+  outline: none;
+  border: 1px solid #FA5E42;
+  box-shadow: 0 1px 2px #0000001A;
+  padding-left: 55px;
+}
+
+.input-container .icon{
+  position: absolute;
+  left: auto;
+  padding: 12px 0 9px 24px;
+  color: #FA5E42;
+  font-size: 24px;
+}
+
+.drop-down-search-icon {
+  float: right;
+  font-size: 1.5rem;
+  color: #FA5E42;
+  cursor: pointer;
+  padding: 0 4px 4px 4px;
+}
+
+.drop-down-search-icon:hover { color: #E5502F; }
+
+#cancel-icon { display: none; }
+
+.drop-down-search {
+  position: fixed;
+  width: 100%;
+  top: 60px;
+  z-index: 5;
+  padding: 8px 0 8px 0;
+  background-color: #F0F0F0;
+
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow:  0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow:  0 1px 1px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.2s linear;
+}
+
+.hide { transform: translateY(-62px); }
+
+.drop-down-search .input-container {
+  margin: auto;
+  max-width: 777px;
+}
+
+.drop-down-search input {
+  padding-left: 48px;
+  padding-right: 16px;
+  height: 44px;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+
+.drop-down-search input:focus { padding-left: 47px; }
+
+.drop-down-search .input-container .icon{
+  position: absolute;
+  padding: 8px 0 8px 16px;
+  color: #FA5E42;
+  font-size: 24px;
+}
+
+.drop-down-search .input-container .button-primary {
+  height: 44px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* For devices with width of 767px and less, like larger phones*/
+@media only screen and (max-width: 767px) {
+  .drop-down-search { top: 50px; }
+
+  input[type="search"], input[type="email"]  {
+    padding-left: 48px;
+    padding-right: 16px;
+    height: 44px;
+    margin-right: 0.5rem;
+  }
+
+  input[type="search"]:focus, input[type="email"]:focus { padding-left: 47px; }
+
+  .input-container .icon{ padding: 0.5rem 0 0.5rem 1rem; }
+}
+
+/* input[type="search"] & input[type="email"] & drop down search styles starts */
+
+/* filters styles starts */
+
+.filter-selected {
+  padding: 10px 15px 10px 15px;
+  color: #FFFFFF;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: 500;
+  margin: 0 0.5rem 0.5rem 0;
+  background-color: #FA5E42;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.filter-selected:hover { background-color: #E5502F; }
+
+.filter-selected svg { margin-left: 0.3rem; }
+
+.close-filters-menu {
+  position: relative;
+  float: right;
+  font-size: 1.5rem;
+  color: #8D8D8D;
+  cursor: pointer;
+}
+
+.filter-group-headline {
+  font-size: 1.25rem;
+  line-height: 1.65rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.filters-menu {
+  max-width: 776px;
+  padding: 1.5rem 1.5rem 0.75rem 1.5rem;
+  position: absolute;
+  display: none;
+  z-index: 5;
+}
+
+.search-filters-group { margin-bottom: 0.5rem; }
+
+.filter-group, .selected-filters {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: row wrap;
+  max-width: 100%;
+  list-style: none;
+}
+
+.search-filters-group input[type="checkbox"] { display: none; }
+
+.search-filters-group input:checked[type="checkbox"] + label {
+  background-color: #FA5E42;
+  color: #FFFFFF;
+}
+
+
+/* For devices with width of 1023px and less, like portrait tablets*/
+@media only screen and (max-width: 1023px) {
+  .filters-menu { margin-right: 3rem; }
+}
+
+/* For devices with width of 767px and less, like larger phones*/
+@media only screen and (max-width: 767px) {
+  .filters-menu { margin-right: 1rem; }
+}
+
+/* filter styles ends */
+
+/* hero-section styles starts */
+
+.hero-section {
+  background-image: url("../images/hero-section-bgimg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: table-cell;
+  vertical-align: middle;
+  height: 640px;
+  width: 100vw;
+}
+
+.hero-inner {
+  max-width: 777px;
+  margin: 0;
+}
+
+.hero-section h1 {
+  max-width: 555px;
+  margin: 0 0 3rem 0;
+}
+
+/* For devices with width of 767px and less, like larger phones*/
+@media only screen and (max-width: 767px) {
+  .hero-section {
+    background-image: url("../images/hero-section-bgimg-mobile.jpg");
+    height: 60vh;
+  }
+
+  .hero-section h1 {
+    margin-bottom: 2rem;
+    max-width: 450px;
+  }
+}
+
+/* hero-section styles ends */
+
+/* button styles starts */
+
+button {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-family: 'Asap', sans-serif;
+}
+
+.button-primary {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 50px;
+  border-radius: 24px;
+  background-color: #FA5E42;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.button-primary:hover {
+  background-color: #E5502F;
+}
+
+.button-secondary {
+  display: inline-block;
+  color: #FA5E42;
+  margin-bottom: 1rem;
+  padding: 0;
+  background-color: transparent;
+}
+
+.button-text { vertical-align: middle; }
+
+.button-icon {
+  float: right;
+  margin-left: 0.5rem;
+  font-size: 20px;
+}
+
+#empty-search-button { float: right; }
+
+/* For devices with width of 767px and less, like larger phones*/
+@media only screen and (max-width: 767px) {
+  .button-primary {
+    height: 44px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* button styles ends */
+
+/* seasonal-section, new-section, .search-section styles starts */
+
+.new-section, .search-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.seasonal-section {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.new-section button { margin-top: 1.5rem; }
+
+.search-section { min-height: 50vh; }
+
+/* For devices with width of 1023px and less, like portrait tablets*/
+@media only screen and (max-width: 1023px) {
+  .new-section button {
+    margin-top: 2rem;
+  }
+}
+
+/* For devices with width of 767px and less, like larger phones*/
+@media only screen and (max-width: 767px) {
+  .new-section, .search-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .seasonal-section {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .new-section button { margin-top: 1rem; }
+}
+
+/* seasonal-section, new-section styles ends */
+
+/* carousel styles starts */
+
+.carousel-container {
+  max-width: 1234px;
+  padding: 0 1rem;
+  position: relative;
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  flex-shrink: 0;
+  width: 353%;
+  transition: all 0.5s;
+  padding-bottom: 1rem;
+}
+
+.carousel-button-previous, .carousel-button-next {
+  color: #FFF;
+  background-color: #FA5E42;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  font-size: 24px;
+  position: absolute;
+  transition: 0.3s;
+  top: 160px;
+}
+
+.carousel-button-previous { left: 0; }
+
+.carousel-button-next { right: 0; }
+
+.carousel-button-previous:hover, .carousel-button-next:hover,
+.carousel-button-previous:active, .carousel-button-next:active { background-color: #E5502F; }
+
+/* For devices with width of 1279px and less, like landscape tablets and laptops */
+@media only screen and (max-width: 1279px) {
+  .carousel-container { padding: 0 2.4rem; }
+
+  .carousel-button-previous { left: 25px; }
+  
+  .carousel-button-next { right: 25px; }
+}
+
+/* For devices with width of 767px and less, like larger phones*/
+@media only screen and (max-width: 767px) {
+
+  .carousel-container { padding: 0; }
+
+  .slider { width: 700%; }
+
+  .carousel-button-previous, .carousel-button-next {
+    height: 44px;
+    width: 44px;
+  }
+
+  .carousel-button-previous { left: 5px; }
+
+  .carousel-button-next { right: 5px; }
+}
+
+/* carousel styles ends*/
+
+/* card styles starts */
+
+.card-container {
+  max-width: 1234px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 31.338%;
+  margin: 0 0.75rem 1.5rem 0.75rem;
+}
+
+.carousel-card {
+  width: 50%;
+  margin: 0 0.3%;
+}
+
+.card a { color: #303030; }
+
+.card:hover, .card:active {
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .card-img, .card:active .card-img { transform: scale(1.2); }
+
+.card-thumbnail {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px
+}
+
+.carousel-card .card-thumbnail { height: 320px; }
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 1.75rem 1.5rem 1.5rem 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+.card-category {
+  position: absolute;
+  top: -15px;
+  background-color: #FA5E42;
+  color: #FFFFFF;
+  font-weight: 500;
+  border-radius: 4px;
+  height: 30px;
+  padding: 6px 8px 6px 8px;
+}
+
+.card-rating {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  font-size: 20px;
+  color: #8D8D8D;
+}
+
+.star-icon {
+  float: left;
+  padding-right: 0.25rem;
+  cursor: pointer;
+  background-clip: content-box;
+  color: #8D8D8D;
+}
+
+.card-desc { padding-bottom: 0.75rem; }
+
+.headline-card {
+  font-size: 1.563rem;
+  line-height: 1.963rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc p {
+  overflow: hidden;
+  height: 46px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: auto;
+  width: 100%;
+  padding-top: 0.75rem;
+}
+
+.card-info .cooking-time-container, .card-info .servings-container, .card-info .difficulty-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-info span { font-size: 0.8rem; }
+
+.cooking-time-container, .servings-container, .difficulty-container {
+  float: left;
+  margin-right: 1rem;
+}
+
+.clock-icon, .utensils-icon, .chef-hat-icon {
+  font-size: 20px;
+  color: #FA5E42;
+  float: left;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.chef-hat-icon img, .utensils-icon img { height: 22px; }
+
+.headline-course {
+  margin: 0;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+}
+
+/* For devices with width of 1279px and less, like landscape tablets and laptops */
+@media only screen and (max-width: 1279px) {
+
+  .card {
+    width: 31%;
+    margin: 0 0.5rem 1.5rem 0.5rem;
+  }
+
+  .carousel .card { width: 50%; }
+
+  .card-desc .headline-card {
+    font-size: 1.25rem;
+    line-height: 1.65rem;
+  }
+
+  .card-container { padding: 0 2.2rem; }
+}
+
+/* For devices with width of 1023px and less, like portrait tablets*/
+@media only screen and (max-width: 1023px) {
+
+  .card-category {
+    font-size: 0.8rem;
+    height: auto;
+  }
+
+  .carousel .card-thumbnail { height: 250px; }
+
+  .card-rating { font-size: 1rem; }
+
+  .card-desc { padding-bottom: 0; }
+
+  .card-desc .headline-card {
+    font-size: 1.25rem;
+    line-height: 1.65rem;
+  }
+
+  .headline-card {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-desc p { display: none; }
+
+  .carousel .card-desc p { display: block; }
+
+  .card-info {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+
+  .clock-icon, .utensils-icon, .chef-hat-icon {
+    font-size: 1rem;
+    margin-right: 0.25rem;
+  }
+
+  .chef-hat-icon img, .utensils-icon img { height: 18px; }
+}
+
+/* For devices with width of 767px and less, like larger phones*/
+@media only screen and (max-width: 767px) {
+  .card-container { padding: 0 1rem; }
+
+  .card  {
+    flex: 0 1 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .carousel .card { margin: 0 1rem; }
+
+  .card-small .card-thumbnail { height: 220px; }
+}
+
+/* card styles ends */
+
+/* footer styles starts */
+
+#footer { background-color: #303030; }
+
+.footer-inner {
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  margin-top: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 calc(50% - 1rem);
+}
+
+#footer h2 {
+  color: #FFF;
+}
+
+#footer p {
+  color: #FFF;
+  margin-bottom: 1rem;
+}
+
+.footer-social-media {
+  margin-top: 0.5rem;
+}
+
+.footer-social-media .svg-inline--fa {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.footer-social-media .svg-inline--fa:hover {
+  opacity: 0.7;
+}
+
+.validation-text {
+  color: #FFF;
+}
+
+/* For devices with width of 1023px and less, like portrait tablets*/
+@media only screen and (max-width: 1023px) {
+  .footer-column {
+    flex: 0 1 100%;
+    margin-top: 2rem;
+  }
+
+  .footer-inner { padding-bottom: 1rem; }
+}
+
+/* footer styles ends */
+
+/* recipe-section styles starts*/
+
+.recipe-img-container {
+  display: flex;
+  max-height: 580px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 25px 25px;
+}
+
+.recipe-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.left-column { flex: 0 2 calc(66.67% - 1.25%); }
+
+.right-column { flex: 0 1 calc(33.33% - 1.25%); }
+
+.recipe-header, .recipe-content {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.similar-section {
+  background-color: #F0F0F0;
+  padding: 3rem 0 2rem 0;
+}
+
+.description p {
+  font-size: 1.25rem;
+  line-height: 1.62rem;
+}
+
+.key-info, .ingredients { padding: 1.5rem; }
+
+.key-info { max-height: 224px; }
+
+.key-info .rating {
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  font-size: 20px;
+  margin-right: 0.5rem;
+}
+
+.key-info .cooking-time-container, .key-info .servings-container, .key-info .difficulty-container {
+  display: flex;
+  align-items: center;
+  float: none;
+  margin: 1rem 0 0 0;
+}
+
+.recipe-content { align-items: baseline; }
+
+.instructions ol {
+  padding-left: 1.2rem;
+  list-style: none;
+  counter-reset: item;
+}
+
+.recipe-step {
+  position: relative;
+  padding-bottom: 1rem;
+  counter-increment: item;
+}
+
+.instructions ol li::before {
+  position: absolute;
+  left: -1.2rem;
+  content: counter(item) ". ";
+  font-weight: 500;
+  color: #FA5E42;
+}
+
+.tips ul { list-style: none; }
+
+.tips li::before {
+  content: "●";
+  color: #FA5E42;
+  font-weight: 700;
+  display: inline-block;
+  width: 1rem;
+}
+
+.tips li { padding-bottom: 1rem; }
+
+.instructions, .tips, .keywords, .categories, .diet, .contributors { margin-bottom: 2rem; }
+
+.author-container, .date-published-container { margin-bottom: 0.5rem; }
+
+.tag {
+  padding: 10px 15px 10px 15px;
+  color: #FA5E42;
+  border-radius: 4px;
+  border: 1px solid #FA5E42;
+  display: inline-block;
+  font-weight: 500;
+  margin: 0 0.5rem 0.5rem 0;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.tag:hover {
+  background-color: #FA5E42;
+  color: #FFFFFF;
+}
+
+.ingredients ul { list-style: none; }
+
+.ingredients li {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1.5px solid #8D8D8D;
+  display: flex;
+}
+
+.ingredient-amount {
+  flex-basis: 7rem;
+  flex-shrink: 0;
+}
+
+
+/* For devices with width of 1023px and less, like portrait tablets*/
+@media only screen and (max-width: 1023px) {
+
+  .recipe-img-container { height: 420px; }
+
+  .left-column, .right-column { flex: 100%; }
+
+  .left-column { margin-top: 2rem; }
+}
+
+/* For devices with width of 767px and less, like larger phones*/
+@media only screen and (max-width: 767px) {
+
+  .recipe-img-container { border-radius: 0 0 16px 16px; }
+}
+
+/* recipe-section styles ends */
+
+/* hidden and shown styles starts */
+
+.hidden { display: none; }
+
+.shown { display: block; }
+
+/* hidden and shown styles ends */
