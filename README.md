@@ -8,7 +8,7 @@ This was my first web-development project and it was done as an independent proj
 
 During this project I learned HTML, CSS, jQuery, JavaScript, PHP and SQL.
 
-All photographs used in this project are from Unsplash.
+All photographs used in this project are from [Unsplash](https://unsplash.com/).
 
 ## Table of Contents
 1. [Database](#database)
@@ -31,6 +31,6 @@ I used Adobe XD for wireframes and final design.
 
 [![Screen record thumbnail](https://github.com/kamuke/Reseptisivusto/blob/main/readmefiles/reseptisivusto_screenrecord_thumbnail.png)](https://youtu.be/xUS4i1TqUMo)
 
-Clicking the image above will take you to a screen record video of the project.
+Clicking the image will take you to a screen record video of the project.
 
 
