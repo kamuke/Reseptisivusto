@@ -564,12 +564,12 @@ button {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  align-items: stretch;
   margin: auto;
 }
 
 .card {
   display: flex;
-  flex-direction: column;
   overflow: hidden;
   cursor: pointer;
   transition: 0.3s;
@@ -582,7 +582,12 @@ button {
   margin: 0 0.3%;
 }
 
-.card a { color: #303030; }
+.card a {
+  color: #303030;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
 .card:hover, .card:active {
   -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -593,6 +598,7 @@ button {
 .card:hover .card-img, .card:active .card-img { transform: scale(1.2); }
 
 .card-thumbnail {
+  width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -611,7 +617,7 @@ button {
 }
 
 .card-content {
-  padding: 1.75rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.75rem 1.5rem 0 1.5rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -655,22 +661,26 @@ button {
 
 .card-desc p {
   overflow: hidden;
-  height: 46px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .card-info {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
   margin-top: auto;
   width: 100%;
-  padding-top: 0.75rem;
+  padding: 1rem 1.5rem 1.5rem 1.5rem
 }
 
 .card-info .cooking-time-container, .card-info .servings-container, .card-info .difficulty-container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-bottom: 0.5rem;
 }
 
 .card-info span { font-size: 0.8rem; }
@@ -740,7 +750,7 @@ button {
 
   .card-desc p { display: none; }
 
-  .carousel .card-desc p { display: block; }
+  .carousel .card-desc p { display: -webkit-box; }
 
   .card-info {
     flex-direction: column;
@@ -767,6 +777,8 @@ button {
   .carousel .card { margin: 0 1rem; }
 
   .card-small .card-thumbnail { height: 220px; }
+
+  .card-info { flex-direction: row; }
 }
 
 /* card styles ends */
@@ -891,7 +903,7 @@ button {
 .recipe-content { align-items: baseline; }
 
 .instructions ol {
-  padding-left: 1.2rem;
+  padding-left: 1.5rem;
   list-style: none;
   counter-reset: item;
 }
@@ -904,7 +916,7 @@ button {
 
 .instructions ol li::before {
   position: absolute;
-  left: -1.2rem;
+  left: -1.5rem;
   content: counter(item) ". ";
   font-weight: 500;
   color: #FA5E42;

@@ -145,16 +145,20 @@ $(document).ready(function () {
 
     function renderTags(data, tag) {
         let section;
+        let link;
 
         switch (tag) {
             case "keywords":
                 section = $(".keywords");
+                link = "index.php?search=";
                 break;
             case "categories":
                 section = $(".categories");
+                link = "index.php?category=";
                 break;
             case "diets":
                 section = $(".diet");
+                link = "index.php?diet=";
                 break;
         }
 
@@ -162,7 +166,7 @@ $(document).ready(function () {
             for (let i = 0; i < data.length; i++) {
                 const a = document.createElement("a");
                 a.className = "tag drop-shadow";
-                a.href = "index.php?search=" + encodeURI(data[i].name);
+                a.href = link + encodeURI(data[i].name);
                 a.innerText = data[i].name;
                 section.append(a);
             }
@@ -174,7 +178,7 @@ $(document).ready(function () {
     function renderContributors(data) {
         const author = $(".author");
         const datePublished = $(".date-published");
-        author.append(data.author);
+        author.append("\u00A0", data.author);
         datePublished.append(convertDate(data.published));
         
         if (data.modified) {

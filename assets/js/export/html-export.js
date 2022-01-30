@@ -1,47 +1,47 @@
 function getCardHtml() {
     const cardHtml =
         '<article class="card round-box drop-shadow">\n' +
-        '    <a href="">\n' +
-        '        <figure class="card-thumbnail">\n' +
-        '            <img class="card-img" src="" alt="">\n' +
-        '        </figure>\n' +
-        '        <div class="card-content">\n' +
-        '            <div class="card-category"></div>\n' +
-        '            <div class="card-rating">\n' +
-        '                <div class="star-icon"><i class="fas fa-star"></i></div>\n' +
-        '                <div class="star-icon"><i class="fas fa-star"></i></div>\n' +
-        '                <div class="star-icon"><i class="fas fa-star"></i></div>\n' +
-        '                <div class="star-icon"><i class="fas fa-star"></i></div>\n' +
-        '                <div class="star-icon"><i class="fas fa-star"></i></div>\n' +
-        '            </div>\n' +
-        '            <header>\n' +
-        '                <h3 class="headline-card"></h3>\n' +
-        '            </header>\n' +
-        '            <div class="card-desc">\n' +
-        '                <p></p>\n' +
-        '            </div>\n' +
-        '            <footer class="card-info">\n' +
-        '                <div class="cooking-time-container">\n' +
-        '                    <div class="clock-icon">\n' +
-        '                        <i class="far fa-clock"></i>\n' +
-        '                    </div>\n' +
-        '                    <span class="cooking"></span>\n' +
-        '                </div>\n' +
-        '                <div class="servings-container">\n' +
-        '                    <div class="utensils-icon">\n' +
-        '                        <img src="assets/svgs/utensils-icon.svg" alt="Utensils icon">\n' +
-        '                    </div>\n' +
-        '                    <span class="servings"></span>\n' +
-        '                </div>\n' +
-        '                <div class="difficulty-container">\n' +
-        '                    <div class="chef-hat-icon">\n' +
-        '                        <img src="assets/svgs/chef-hat-icon.svg" alt="Chef hat icon">\n' +
-        '                    </div>\n' +
-        '                    <span class="difficulty"></span>\n' +
-        '                </div>\n' +
-        '            </footer>\n' +
-        '        </div>\n' +
-        '    </a>\n' +
+            '<a href="">\n' +
+                '<figure class="card-thumbnail">\n' +
+                    '<img class="card-img" src="" alt="">\n' +
+                '</figure>\n' +
+                '<div class="card-content">\n' +
+                    '<div class="card-category"></div>\n' +
+                    '<div class="card-rating">\n' +
+                        '<div class="star-icon"><i class="fas fa-star"></i></div>\n' +
+                        '<div class="star-icon"><i class="fas fa-star"></i></div>\n' +
+                        '<div class="star-icon"><i class="fas fa-star"></i></div>\n' +
+                        '<div class="star-icon"><i class="fas fa-star"></i></div>\n' +
+                        '<div class="star-icon"><i class="fas fa-star"></i></div>\n' +
+                    '</div>\n' +
+                    '<header>\n' +
+                        '<h3 class="headline-card"></h3>\n' +
+                    '</header>\n' +
+                    '<div class="card-desc">\n' +
+                        '<p></p>\n' +
+                    '</div>\n' +
+                '</div>\n' +
+                '<footer class="card-info">\n' +
+                '<div class="cooking-time-container">\n' +
+                '<div class="clock-icon">\n' +
+                '<i class="far fa-clock"></i>\n' +
+                '</div>\n' +
+                '<span class="cooking"></span>\n' +
+                '</div>\n' +
+                '<div class="servings-container">\n' +
+                '<div class="utensils-icon">\n' +
+                '<img src="assets/svgs/utensils-icon.svg" alt="Utensils icon">\n' +
+                '</div>\n' +
+                '<span class="servings"></span>\n' +
+                '</div>\n' +
+                '<div class="difficulty-container">\n' +
+                '<div class="chef-hat-icon">\n' +
+                '<img src="assets/svgs/chef-hat-icon.svg" alt="Chef hat icon">\n' +
+                '</div>\n' +
+                '<span class="difficulty"></span>\n' +
+                '</div>\n' +
+                '</footer>\n' +
+            '</a>\n' +
         '</article>';
 
     return cardHtml;

@@ -27,7 +27,7 @@
                 <div class="container">
                     <div class="input-container">
                         <form class="drop-down-search-form" action="index.php">
-                            <input type="search" name="search" class="drop-shadow" placeholder="Hae reseptejä ja ateriakokonaisuuksia" />
+                            <input type="search" name="search" class="drop-shadow" placeholder="Hae reseptejä" />
                             <div class="icon">
                                 <i class="fas fa-search"></i>
                             </div>

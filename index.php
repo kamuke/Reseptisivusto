@@ -22,7 +22,7 @@
           <section class="search-container">
             <form class="search-form">
             <div class="input-container">
-              <input class="search-input drop-shadow" type="search" name="search" placeholder="Hae reseptejä ja ateriakokonaisuuksia"/>
+              <input class="search-input drop-shadow" type="search" name="search" placeholder="Hae reseptejä"/>
               <div class="icon">
                 <i class="fas fa-search"></i>
               </div>
