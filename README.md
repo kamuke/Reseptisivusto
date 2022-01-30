@@ -18,3 +18,6 @@ During this project I learned HTML, CSS, jQuery, JavaScript, PHP and SQL.
 I used Adobe XD for wireframes and final design.
 
 # Project in action
+
+
+All photographs used in this project are from Unsplash.
