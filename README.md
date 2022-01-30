@@ -1,23 +1,36 @@
 # Reseptisivusto
 
+![Reseptisivusto](https://github.com/kamuke/Reseptisivusto/blob/main/readmefiles/reseptisivusto_mockup.png)
+
 Reseptisivusto is a simple web application for searching recipes.
 
-This is my first web-development project. The project was done as an independent project during my web-development internship and it involved designing and creating database, UI and UX design, frontend and backend development.
+This was my first web-development project and it was done as an independent project during my web-development internship. The project involved designing and creating database, UI and UX design and frontend and backend development.
 
 During this project I learned HTML, CSS, jQuery, JavaScript, PHP and SQL.
 
-# Database
+All photographs used in this project are from Unsplash.
+
+## Table of Contents
+1. [Database](#database)
+2. [Wireframed and final design](#wireframes)
+3. [Project in action](#action)
+
+## Database <a name="database"></a>
 ![Database](https://github.com/kamuke/Reseptisivusto/blob/main/readmefiles/reseptisivusto_database.png)
 
-
-# Wireframes and final design
+## Wireframes and final design <a name="wireframes"></a>
+### Wireframes
 ![Wireframe](https://github.com/kamuke/Reseptisivusto/blob/main/readmefiles/reseptisivusto_wireframe.png)
 
+### Final design
 ![Final design](https://github.com/kamuke/Reseptisivusto/blob/main/readmefiles/reseptisivusto_design.png)
 
 I used Adobe XD for wireframes and final design.
 
-# Project in action
+## Project in action <a name="action"></a>
+
+[![Screen record thumbnail](https://github.com/kamuke/Reseptisivusto/blob/main/readmefiles/reseptisivusto_screenrecord_thumbnail.png)](https://youtu.be/xUS4i1TqUMo)
+
+Clicking the image above will take you to a screen record video of the project.
 
 
-All photographs used in this project are from Unsplash.
