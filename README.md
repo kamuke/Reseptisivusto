@@ -4,7 +4,7 @@
 
 Reseptisivusto is a simple web application for searching recipes.
 
-This was my first web-development project and it was done as an independent project during my web-development internship. The project involved designing and creating database, UI and UX design and frontend and backend development.
+This was my first web-development project and it was done as an independent assignment during my web-development internship in 2021. The project involved designing and creating database, UI and UX design and frontend and backend development.
 
 During this project I learned HTML, CSS, jQuery, JavaScript, PHP and SQL.
 
